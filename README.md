@@ -1,7 +1,7 @@
 # Adaptive Multi-Granularity RAG for Academic QA
 
 ## Overview
-This project presents a modular Retrieval-Augmented Generation (RAG) system designed for academic paper question answering. It addresses the problem of retrieval scope mismatch by dynamically adapting retrieval granularity and combining hybrid retrieval with reranking and context expansion.
+This project presents a modular Retrieval-Augmented Generation (RAG) system for academic paper question answering. It addresses the problem of retrieval scope mismatch by dynamically adapting retrieval granularity and combining hybrid retrieval, reranking, and context expansion.
 
 ---
 
@@ -13,24 +13,24 @@ Academic QA tasks vary significantly in scope. Some questions require precise fa
 ## Solution
 This system introduces an adaptive multi-granularity RAG pipeline:
 
-- Multi-granularity chunking (sentence, paragraph, section)
-- Query routing based on question intent
-- Hybrid retrieval (dense + BM25 + sparse)
-- Reciprocal Rank Fusion (RRF)
-- Cross-encoder reranking
-- Context expansion
-- Grounded answer generation
+- Multi-granularity chunking (sentence, paragraph, section)  
+- Query routing based on question intent  
+- Hybrid retrieval (dense + BM25 + sparse)  
+- Reciprocal Rank Fusion (RRF)  
+- Cross-encoder reranking  
+- Context expansion  
+- Grounded answer generation  
 
 ---
 
 ## System Architecture
 The system is organized into modular components:
 
-- Chunking
-- Embedding
-- Retrieval
-- RAG pipeline
-- Evaluation
+- Chunking  
+- Embedding  
+- Retrieval  
+- RAG pipeline  
+- Evaluation  
 
 ---
 
@@ -46,21 +46,20 @@ The system is organized into modular components:
 
 ## Demo
 
-Example query:
-> What is the evaluation metric used in this paper?
+Below is an example interface of the system:
 
-Example output:
-> The evaluation metric used is ROUGE-L...
+![Demo](screenshots/demo.png)
 
-(Insert screenshots in /screenshots)
+Example queries and outputs are available in:  
+`demo/example_queries.md`
 
 ---
 
 ## Evaluation Highlights
 
-- Improved retrieval accuracy (Hit Rate, MRR)
-- Stable generation quality (ROUGE-L, Faithfulness)
-- Better alignment between query type and retrieved context
+- Improved retrieval accuracy (Hit Rate, MRR)  
+- Stable generation quality (ROUGE-L, Faithfulness)  
+- Better alignment between query type and retrieved context  
 
 ---
 
